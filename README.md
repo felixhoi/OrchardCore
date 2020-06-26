@@ -1,9 +1,9 @@
 # Orchard Core 
 
-Orchard Core consists of two distinct projects:
+Orchard Core包含两个不同的项目:
 
-- __Orchard Core Framework__: An application framework for building modular, multi-tenant applications on ASP.NET Core.
-- __Orchard Core CMS__: A Web Content Management System (CMS) built on top of the Orchard Core Framework.
+- __Orchard Core Framework__: 一个用于在ASP.NET Core上构建模块化的多租户应用程序的应用程序框架。
+- __Orchard Core CMS__: 在Orchard Core框架之上构建的Web内容管理系统（CMS）。
 
 [![Join the chat at https://gitter.im/OrchardCMS/OrchardCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OrchardCMS/OrchardCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![BSD-3-Clause License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](LICENSE.txt)
@@ -12,57 +12,57 @@ Orchard Core consists of two distinct projects:
 
 ## Build Status
 
-Stable (master): 
+稳定版 (master): 
 
 [![Build Status](https://api.travis-ci.org/OrchardCMS/OrchardCore.svg?branch=master)](https://travis-ci.org/OrchardCMS/OrchardCore/branches)
 [![Build status](https://img.shields.io/appveyor/ci/alexbocharov/orchardcore/master.svg?label=appveyor&style=flat-square)](https://ci.appveyor.com/project/alexbocharov/orchardcore/branch/master)
 [![NuGet](https://img.shields.io/nuget/v/OrchardCore.Application.Cms.Targets.svg)](https://www.nuget.org/packages/OrchardCore.Application.Cms.Targets)
 
-Nightly (dev): 
+每日更新 (dev): 
 
 [![Build Status](https://api.travis-ci.org/OrchardCMS/OrchardCore.svg?branch=dev)](https://travis-ci.org/OrchardCMS/OrchardCore/branches)
 [![Build status](https://img.shields.io/appveyor/ci/alexbocharov/orchardcore/dev.svg?label=appveyor&style=flat-square)](https://ci.appveyor.com/project/alexbocharov/orchardcore/branch/dev)
 [![Cloudsmith](https://api-prd.cloudsmith.io/badges/version/orchardcore/preview/nuget/OrchardCore.Application.Cms.Targets/latest/x/?render=true&badge_token=gAAAAABey9hKFD_C-ZIpLvayS3HDsIjIorQluDs53KjIdlxoDz6Ntt1TzvMNJp7a_UWvQbsfN5nS7_0IbxCyqHZsjhmZP6cBkKforo-NqwrH5-E6QCrJ3D8%3D)](https://cloudsmith.io/~orchardcore/repos/preview/packages/detail/nuget/OrchardCore.Application.Cms.Targets/latest/)
 
-## Status
+## 现状
 
 ### RC 2
 
-The software is almost ready for final release. No feature development or enhancement of the software is undertaken; tightly scoped bug fixes are the only code you're allowed to write in this phase, and even then only for the most heinous and debilitating of bugs.
+该软件几乎已准备好最终发布。 不进行功能开发或软件增强； 在此阶段仅允许严格限定范围的错误修复，除非出现重大的错误。
 
-Here is a more detailed [roadmap](https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap).
+这是一个更详细的 [路线图](https://github.com/OrchardCMS/OrchardCore/wiki/Roadmap).
 
-## Getting Started
+## 开始
 
-- Clone the repository using the command `git clone https://github.com/OrchardCMS/OrchardCore.git` and checkout the `dev` branch.
+- 使用命令 `git clone https://github.com/OrchardCMS/OrchardCore.git` 克隆此仓库，并切换到 `dev` 分支.
 
 ### Command line
 
-- Install the latest version of the .NET Core SDK from this page <https://www.microsoft.com/net/download/core>
-- Next, navigate to `D:\OrchardCore\src\OrchardCore.Cms.Web` or wherever your folder is on the commandline in Administrator mode.
-- Call `dotnet run`.
-- Then open the `http://localhost:5000` URL in your browser.
+- 从这个页面安装最新版的 .NET Core SDK  <https://www.microsoft.com/net/download/core>
+- 接下来,导航到 `D:\OrchardCore\src\OrchardCore.Cms.Web` 或你的文件夹，在管理员模式下命令行。.
+- 执行 `dotnet run`.
+- 然后在浏览器中打开 `http://localhost:5000` .
 
 ### Visual Studio
 
-- Download Visual Studio 2019 (any edition) from https://www.visualstudio.com/downloads/
-- Open `OrchardCore.sln` and wait for Visual Studio to restore all Nuget packages
-- Ensure `OrchardCore.Cms.Web` is the startup project and run it
+- 从 https://www.visualstudio.com/downloads/ 下载 Visual Studio 2019 (任何版本) 
+- 打开解决方案： `OrchardCore.sln`，然后等待恢复所有包
+- 确保启动项目为： `OrchardCore.Cms.Web` ，然后运行
 
 ### Docker
 
-- Run `docker run --name orchardcms orchardproject/orchardcore-cms-linux:latest`
+- 运行 `docker run --name orchardcms orchardproject/orchardcore-cms-linux:latest`
 
-Docker images and parameters can be found at <https://hub.docker.com/u/orchardproject/>
+Docker 镜像和参数可以到这里查看 <https://hub.docker.com/u/orchardproject/>
 
-### Documentation
+### 文档
 
-The documentation can be accessed here: <https://docs.orchardcore.net/>
+可以从这里访问文档: <https://docs.orchardcore.net/>
 
-## Code of Conduct
+## 编码规范
 
-See [CODE-OF-CONDUCT](./CODE-OF-CONDUCT.md)
+看这里 [编码规范](./CODE-OF-CONDUCT.md)
 
 ## .NET Foundation
 
-This project is supported by the [.NET Foundation](http://www.dotnetfoundation.org).
+这个项目支持 [.NET Foundation](http://www.dotnetfoundation.org).
