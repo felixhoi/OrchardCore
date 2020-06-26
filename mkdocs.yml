@@ -22,8 +22,8 @@ extra:
       link: https://twitter.com/OrchardCMS
 
 # Repository
-repo_name: OrchardCMS/OrchardCore
-repo_url: https://github.com/OrchardCMS/OrchardCore
+repo_name: OrchardCoreCn/OrchardCore
+repo_url: https://github.com/OrchardCoreCn/OrchardCore
 edit_uri: edit/dev/src/
 
 # Options
