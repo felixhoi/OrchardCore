@@ -1,5 +1,7 @@
 # Orchard Core 中文文档
 
+QQ 群：877196442，欢迎参加文档翻译工作。
+
 Orchard Core 是基于 [Orchard CMS](https://github.com/OrchardCMS/Orchard) 使用 [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) 重新构建的。
 
 Orchard Core 由两个不同的目标组成:
