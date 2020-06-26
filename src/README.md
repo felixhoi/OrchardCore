@@ -4,8 +4,8 @@ Orchard Core 是基于 [Orchard CMS](https://github.com/OrchardCMS/Orchard) 使�
 
 Orchard Core 由两个不同的目标组成:
 
-- **Orchard Core Framework**: 一个应用程序框架，用于构建**模块化**、**多租户** 的ASP.NET Core应用程序.
-- **Orchard Core CMS**: 一个建立在Orchard Core Framework之上的网络内容管理系统（CMS） .
+- **Orchard Core Framework**: 一个应用程序框架，用于构建**模块化**、**多租户** 的ASP.NET Core应用程序。
+- **Orchard Core CMS**: 一个建立在Orchard Core Framework之上的网络内容管理系统（CMS)。
 
 需要注意框架和 CMS 之间的差异非常重要。一些想要开发 SaaS 应用程序的开发人员只会对模块化框架感兴趣。其他想要构建可管理网站的用户将专注于 CMS 并构建模块来增强其网站或整个生态系统。
 
@@ -16,7 +16,7 @@ Orchard Core 由两个不同的目标组成:
 
 ## 使用Orchard Core Framework 构建软件服务 （SaaS） 解决方案 
 
-了解Orchard Core Framework是独立于nuget.org上的CMS分发的，这一点非常重要. 我们在 <https://github.com/OrchardCMS/OrchardCore.Samples> 提供了一些示例程序，它将指导您如何仅使用Orchard Core Framework来构建**模块化** 和 **多租户** 的应用程序，而无需任何 CMS 特定功能。
+了解Orchard Core Framework是独立于nuget.org上的CMS分发的，这一点非常重要。我们在 <https://github.com/OrchardCMS/OrchardCore.Samples> 提供了一些示例程序，它将指导您如何仅使用Orchard Core Framework来构建**模块化** 和 **多租户** 的应用程序，而无需任何 CMS 特定功能。
 
 我们的目标之一是启用托管应用程序的基于社区的生态系统，这些生态系统可以通过模块（如电子商务系统、博客引擎等）进行扩展。Orchard Core Framework支持模块化环境，允许不同的团队处理应用程序的不同部分，并使组件跨项目可重用。
 
