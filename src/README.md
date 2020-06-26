@@ -1,4 +1,4 @@
-# Orchard Core in Chinese
+# Orchard Core 中文文档
 
 Orchard Core is a redevelopment of [Orchard CMS](https://github.com/OrchardCMS/Orchard) on [ASP.NET Core](https://docs.microsoft.com/aspnet/core/). 
 
