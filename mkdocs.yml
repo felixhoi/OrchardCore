@@ -1,4 +1,4 @@
-site_name: Orchard Core Documentation
+site_name: Orchard Core 中文文档
 theme:
   name: material
   logo: docs/assets/images/orchard-logo.png
@@ -62,43 +62,43 @@ plugins:
   
 # Page tree
 nav:
-    - About Orchard Core: README.md
-    - Getting started: 
+    - 关于 Orchard Core: README.md
+    - 入门: 
         - Create a CMS Web application: docs/getting-started/README.md
         - Configure Preview package source: docs/getting-started/preview-package-source.md
         - Recipes and Starter Themes: docs/getting-started/starter-recipes.md
         - Code Generation Templates: docs/getting-started/templates/README.md
         - Create a Theme: docs/getting-started/theme.md
-    - Glossary: 
-        - Terms and Concepts: docs/glossary/README.md
-    - How-to guides: 
-        - Follow the Guides: docs/guides/README.md
-        - Create a modular application: docs/guides/create-modular-application-mvc/README.md
-        - Create a website: docs/guides/create-cms-application/README.md
-        - Create a Decoupled CMS site: docs/guides/decoupled-cms/README.md
-        - Add an admin menu: docs/guides/add-admin-menu/README.md
-        - Implement Full Text search: docs/guides/implement-fulltext-search/README.md
-        - Install localization files: docs/guides/install-localization-files/README.md
-        - Integrate Facebook plugins: docs/guides/integrate-facebook-plugins/README.md
-        - Run code on startup: docs/guides/run-code-on-startup/README.md
-        - Create a custom admin theme: docs/guides/create-admin-theme/README.md
-        - Customize encoding settings: docs/guides/encoding-settings/README.md
-    - Key Topics: 
-        - Manage your Content: docs/topics/content-management/README.md
-        - Customize the Display: docs/topics/display/README.md
-        - Localize your site: docs/topics/localize/README.md
-        - Handle the Media: docs/topics/media/README.md
-        - Navigate between pages: docs/topics/navigation/README.md
-        - Query and Search data: docs/topics/search/README.md
-        - Secure your application: docs/topics/security/README.md
-#        - Data: docs/topics/data/README.md
-#        - Configuration: docs/topics/configuration/README.md
-        - Workflows: docs/topics/workflows/README.md
-        - Contributing to the docs: docs/topics/docs-contributions/README.md
-    - Reference: 
-        - CMS Modules: 
-            - Content Types: docs/reference/modules/ContentTypes/README.md
-            - Content Parts: 
+    - 词汇表: 
+        - 术语和概念: docs/glossary/README.md
+    - 入门指南: 
+        - 遵循指南: docs/guides/README.md
+        - 创建一个模块化应用程序: docs/guides/create-modular-application-mvc/README.md
+        - 创建一个网站: docs/guides/create-cms-application/README.md
+        - 创建一个已解耦的CMS站点: docs/guides/decoupled-cms/README.md
+        - 添加管理菜单: docs/guides/add-admin-menu/README.md
+        - 实现全文搜索: docs/guides/implement-fulltext-search/README.md
+        - 安装本地化文件: docs/guides/install-localization-files/README.md
+        - 集成Facebook插件: docs/guides/integrate-facebook-plugins/README.md
+        - Startup 配置: docs/guides/run-code-on-startup/README.md
+        - 创建自定义管理主题: docs/guides/create-admin-theme/README.md
+        - 自定义编码设置: docs/guides/encoding-settings/README.md
+    - 关键主题: 
+        - 管理您的内容: docs/topics/content-management/README.md
+        - 自定义显示: docs/topics/display/README.md
+        - 本地化您的网站: docs/topics/localize/README.md
+        - 处理媒体: docs/topics/media/README.md
+        - 在页面之间导航: docs/topics/navigation/README.md
+        - 查询和搜索数据: docs/topics/search/README.md
+        - 保护您的应用程序: docs/topics/security/README.md
+#        - 数据: docs/topics/data/README.md
+#        - 配置: docs/topics/configuration/README.md
+        - 工作流: docs/topics/workflows/README.md
+        - 为文档做贡献: docs/topics/docs-contributions/README.md
+    - 参考文档: 
+        - CMS模块: 
+            - 内容类型(Content Types): docs/reference/modules/ContentTypes/README.md
+            - 内容部件(Content Parts): 
                 - Add Parts to your Content: docs/reference/modules/ContentParts/README.md
                 - Title: docs/reference/modules/Title/README.md
                 - Autoroute: docs/reference/modules/Autoroute/README.md
