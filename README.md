@@ -63,6 +63,6 @@ Docker 镜像和参数可以到这里查看 <https://hub.docker.com/u/orchardpro
 
 看这里 [编码规范](./CODE-OF-CONDUCT.md)
 
-## .NET Foundation
+## .NET 基金会
 
-这个项目支持 [.NET Foundation](http://www.dotnetfoundation.org).
+这个项目受[.NET 基金会](http://www.dotnetfoundation.org)支持.
