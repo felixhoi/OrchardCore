@@ -1,4 +1,6 @@
-# Orchard Core 
+# Orchard Core 中文文档
+
+QQ 群：877196442，由于目前中文文档翻译工作刚刚起步，欢迎各方小伙伴参加文档翻译工作。
 
 Orchard Core包含两个不同的项目:
 
