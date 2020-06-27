@@ -81,8 +81,8 @@ OpenID连接设置配方步骤示例:
 }
 ```
 
-#### 服务器端配置好后，在你的客户端进行授权验证 :
-
+### 客户端验证
+服务器端配置好后，在你的客户端进行授权验证 :
 ```Javascript
 // environment.serverURL 是你的Orchard Core 的站点根路径
     const url = environment.serverURL + '/connect/token/';
