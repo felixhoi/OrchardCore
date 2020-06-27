@@ -40,8 +40,8 @@ Orchard Core 充当身份提供程序，以支持令牌身份验证，而无需�
 
 - 测试模式：启用测试模式，无需提供证书来签署提供临时密钥的令牌。同时也消除了使用HTTPS发行令牌的要求。 
 - 令牌格式：有两个选项:
-  - JWT：此格式使用签名的JWT标准令牌（未加密）。它要求客户端接受正在使用的SSL证书作为可信证书。
-  - Encrypted: 此格式使用由ASP.NET数据保护块。它不要求客户端接受SSL证书作为可信证书。
+  -  JWT：此格式使用签名的JWT标准令牌（未加密）。它要求客户端接受正在使用的SSL证书作为可信证书。
+  -  Encrypted: 此格式使用由ASP.NET数据保护块。它不要求客户端接受SSL证书作为可信证书。
 - Authority: 权威，Orchard用作身份服务器的Orchard URL。
 - Audiences: 观众 identity server为其颁发有效JWT令牌的资源服务器的URL.
 - Certificate Store Location: 证书存储位置， CurrentUser/LocalMachine <https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.storelocation(v=vs.110).aspx>
