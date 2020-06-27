@@ -141,7 +141,7 @@ nav:
                 - GitHub: docs/reference/modules/GitHub/README.md
                 - Google: docs/reference/modules/Google/README.md
             - Users: docs/reference/modules/Users/README.md
-        - Core Modules: 
+        - 核心模块: 
     #        - How to use Core Modules: docs/reference/core/README.md
             - 功能: docs/reference/modules/Features/README.md
             - 内容: docs/reference/modules/Contents/README.md
