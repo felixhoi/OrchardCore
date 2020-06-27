@@ -1,4 +1,4 @@
-# Resources (`OrchardCore.Resources`)
+# Resources (`OrchardCore.Resources`) 中文文档
 
 ## Purpose
 
