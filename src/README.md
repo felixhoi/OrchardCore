@@ -1,6 +1,7 @@
 # Orchard Core 中文文档
 
-QQ 群：877196442，由于目前中文文档翻译工作刚刚起步，欢迎各方小伙伴参加文档翻译工作。
+由于目前中文文档翻译工作刚刚起步，欢迎小伙伴们踊跃报名参加文档翻译工作。
+QQ 群：877196442
 
 Orchard Core 是基于 [Orchard CMS](https://github.com/OrchardCMS/Orchard) 使用 [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) 重新构建的。
 
