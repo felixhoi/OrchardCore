@@ -55,9 +55,9 @@ Orchard Core CMS支持所有主要的网站建设策略：
 
 - **完整 CMS**. 在此模式下，网站使用主题和模板来呈现您的内容，旨在实现很少或完全没有自定义开发。
 
-- **解耦 CMS(Decoupled CMS)**. 除了内容管理端之外，网站从空白开始。您可以使用 Razor Pages 或 MVC 操作创建所需的所有模板，并通过内容服务访问您的内容。参考: <https://www.youtube.com/watch?v=yWpz8p-oaKg>
+- **解耦 CMS(Decoupled CMS)**. 除了内容管理端之外，网站从空白开始。您可以使用 Razor Pages 或 MVC 操作创建所需的所有模板，并通过内容服务访问您的内容。参考:[B站](https://www.bilibili.com/video/BV1nE411M7FV?from=search&seid=808810272737390403)  ，   <https://www.youtube.com/watch?v=yWpz8p-oaKg>
 
-- **无头 CMS(Headless CMS)**. 该网站只管理内容，您创建一个单独的应用程序，该应用程序将使用 GraphQL 或 REST API 获取托管内容。参考： <https://www.youtube.com/watch?v=4o9zG17cfa0>
+- **无头 CMS(Headless CMS)**. 该网站只管理内容，您创建一个单独的应用程序，该应用程序将使用 GraphQL 或 REST API 获取托管内容。参考： [B站](https://www.bilibili.com/video/BV15E411s7kz?from=search&seid=16124424122784013302)，[油管](https://www.youtube.com/watch?v=4o9zG17cfa0)
 
 ## 项目状态
 
