@@ -14,11 +14,11 @@
 
 注册 OpenID 模块使用的核心组件。
 
-## 管理界面Management Interface
+## 管理界面
 
 允许添加、编辑和删除已注册的应用程序。
 
-## 授权服务器Authorization Server
+## 授权服务器
 
 使用 OpenID Connect/OAuth 2.0 标准支持外部应用程序的身份验证。 
 它基于[`OpenIddict`](https://github.com/openiddict/openiddict-core) 库允许。 
@@ -203,7 +203,6 @@ $mypwd = ConvertTo-SecureString -String "MySecretPassword123" -Force -AsPlainTex
 Import-PfxCertificate -FilePath C:\securelocation\connect.example.com.pfx cert:\localMachine\my -Password $mypwd
 ```
 
-**重要提示:** In order for the `OrchardCore.OpenId` module to use the certificate's keys for signing, it requires `Read` access to the certificate in the store. This can be granted in various ways, for example:
 **重要提示:** `OrchardCore.OpenId`模块若要使用证书的密钥进行签名，它要求对存储区中的证书具有`Read`访问权限。这可以通过多种方式授予，例如：
 
 
@@ -266,7 +265,6 @@ Import-PfxCertificate -FilePath C:\securelocation\connect.example.com.pfx cert:\
 
 可用设置为：
 
-- Display Name: Display name of the IdP. It is shown in the login form.
 - 显示名称: 凭据提供程序(IdP:Identity Provider)的显示名称。它显示在登录表单中。
 - 权威: 进行OpenIdConnect调用时使用的权限。
 - 客户端Id: `client_id` 部分.
@@ -286,7 +284,7 @@ Import-PfxCertificate -FilePath C:\securelocation\connect.example.com.pfx cert:\
     - 使用 `id_token token` 响应类型（例如：<http://openid.net/specs/openid-connect-core-1_0.html#id_token-tokenExample>)
 - 客户端机密（ClientSecret）: 它与一个“机密”流、代码或混合流一起使用。
 
-OpenID Connect Client Settings配方步骤示例：
+OpenID Connect客户端设置配方步骤示例：
 
 ```json
 {
