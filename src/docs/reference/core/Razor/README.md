@@ -1,8 +1,8 @@
-# Razor Helpers
+# Razor 语法帮助器
 
-Many extensions methods are available in Razor with `@Orchard`.
+Razor中提供了许多扩展方法，其中包括`@Orchard`.
 
-## Razor extensions
+## Razor 扩展
 
 | Method | Module | Description |
 | ------ | ------ | ----------- |
