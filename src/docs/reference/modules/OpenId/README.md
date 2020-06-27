@@ -81,6 +81,10 @@ OpenID连接设置配方步骤示例:
 }
 ```
 
+参考这里：在你的客户端进行授权验证 :<https://github.com/OrchardSkills/OrchardSkills.OrchardCore.AuthenticatedGraphQL/blob/f4aca695c922ef733294c1cf8b0bd28e82dc954b/ClientApp/src/app/app.component.ts#L38>
+
+
+
 ### OpenID 客户端连接应用程序配置
 
 可以通过管理菜单中的“安全/OpenID 连接/管理/应用程序” 打开
