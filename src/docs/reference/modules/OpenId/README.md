@@ -2,7 +2,7 @@
 
 ## OpenID Connect Module
 
-`OrchardCore.OpenId` provides the following features:
+`OrchardCore.OpenId` 提供以下功能：
 
 - 核心组件
 - 授权服务器
@@ -12,7 +12,6 @@
 
 ## 核心组件Core Components
 
-Registers the core components used by the OpenID module.
 注册 OpenID 模块使用的核心组件。
 
 ## 管理界面Management Interface
