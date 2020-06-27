@@ -32,7 +32,7 @@ Orchard Core CMS 是基于Orchard CMS 使用ASP.NET Core 重写的。它不仅�
 
 - **性能**. 这可能是开始使用Orchard Core CMS时最明显的变化。这对CMS来说是非常快的。速度如此之快，以至于我们甚至都没有关心输出缓存模块的工作。让你体验一下，没有缓存的Orchard Core CMS比以前的版本快了20倍。
 
-- **跨平台**. 现在，您可以在 Windows、Linux 和 macOS 上开发和部署果园核心 CMS。我们也有 Docker 映像可供使用。
+- **跨平台**. 现在，您可以在 Windows、Linux 和 macOS 上开发和部署Orchard Core CMS。我们也有 Docker 映像可供使用。
 
 - **文档数据库** 抽象化. Orchard Core CMS仍然需要一个关系数据库，并且兼容SQL Server, MySQL, PostgreSQL和SQLite，但是它现在使用的是一个抽象化文档数据库(YesSql)，它提供了一个文档数据库API来存储和查询文档。对于CMS系统来说，这是一种更好的方法，可以显著提高性能。
 
