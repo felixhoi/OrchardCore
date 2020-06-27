@@ -1,3 +1,3 @@
-# Response Compression (`OrchardCore.ResponseCompression`)
+# 响应压缩 (`OrchardCore.ResponseCompression`)
 
-Compresses HTTP responses with gzip, just enable the feature.
+使用gzip压缩HTTP响应，只需启用该功能即可。
