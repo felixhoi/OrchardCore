@@ -95,7 +95,7 @@ nav:
 #        - 配置: docs/topics/configuration/README.md
         - 工作流: docs/topics/workflows/README.md
         - 为文档做贡献: docs/topics/docs-contributions/README.md
-    - 参考文档: 
+    - 参考资料: 
         - CMS模块: 
             - 内容类型(Content Types): docs/reference/modules/ContentTypes/README.md
             - 内容部件(Content Parts): 
