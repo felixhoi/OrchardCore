@@ -81,7 +81,29 @@ OpenID连接设置配方步骤示例:
 }
 ```
 
-参考这里：在你的客户端进行授权验证 :<https://github.com/OrchardSkills/OrchardSkills.OrchardCore.AuthenticatedGraphQL/blob/f4aca695c922ef733294c1cf8b0bd28e82dc954b/ClientApp/src/app/app.component.ts#L38>
+#### 服务器端配置好后，在你的客户端进行授权验证 :
+
+```Javascript
+// environment.serverURL 是你的Orchard Core 的站点根路径
+    const url = environment.serverURL + '/connect/token/';
+    this.blogPosts = this.allBlogPostGQL.watch().valueChanges.pipe(map(blogs => blogs.data));
+
+    const body = new HttpParams()
+      .set("client_id", "e0f660a2cf2a47babac40a4a8c24e7e0")
+      .set("client_secret", "76945d3917a4456db5a41fc2949d6439")
+      .set("grant_type", "client_credentials");
+    const headers = new HttpHeaders({
+      "Content-Type": "application/x-www-form-urlencoded"
+    });
+     
+    this.http.post(url, body, {headers: headers}).subscribe( res => {
+      console.log(res);
+      const jsonToken = res['access_token'];
+      localStorage.setItem('access_token', jsonToken)
+    });
+```
+
+参考这里：<https://github.com/OrchardSkills/OrchardSkills.OrchardCore.AuthenticatedGraphQL/blob/f4aca695c922ef733294c1cf8b0bd28e82dc954b/ClientApp/src/app/app.component.ts#L38>
 
 
 
