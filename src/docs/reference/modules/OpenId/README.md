@@ -181,8 +181,9 @@ OpenID Connect应用程序配方步骤示例:
 可以通过管理菜单中的“安全/OpenID 连接/管理/作用域” 打开设置或使用配方步骤设置作用域。
 
 OpenID连接作用域需要以下配置.
-|Key|Description|
-|-|:-|
+
+| Property | Description |
+| -------- | ----------- |
 |名称|作用域的唯一名称.|
 |显示名称|与当前作用域关联的显示名称。|
 |说明|描述如何在系统中使用此作用域。|
@@ -285,8 +286,9 @@ Import-PfxCertificate -FilePath C:\securelocation\connect.example.com.pfx cert:\
 - 通过支持JWT和OpenID连接发现的远程服务器验证令牌。
 
 令牌验证需要以下配置。
-|||
-|-|:-|
+
+| Property | Description |
+| -------- | ----------- |
 |授权服务器租户|运行OpenID Connect Server的租户。如果未选择“无”，则必须提供以下属性。|
 |权威（Authority）|颁发令牌的远程OpenID Connect服务器的地址。|
 |观众（Audience）|定义必须检查的令牌的预期收件人.|
