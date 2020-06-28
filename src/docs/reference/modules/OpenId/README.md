@@ -125,7 +125,7 @@ OpenID Connect客户端应用程序需要以下配置.
   - 允许授权密码流（Allow Password Flow）： 它要求启用令牌终结点。更多信息请访问 <https://tools.ietf.org/html/rfc6749#section-1.3.3> \
    请求示例:  ：
     ``` JSON 
-    //url="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
+    //EndPoint="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
     {
       "grant_type":"password",
       "client_id": "client_id",
@@ -139,7 +139,7 @@ OpenID Connect客户端应用程序需要以下配置.
   - 允许授权代码流(Allow Authorization Code Flow): 它要求启用授权和令牌终结点。更多信息请访问<http://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth> \
    请求示例：
     ``` JSON    
-    //url="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
+    //EndPoint="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
     {
       "grant_type": "code",
       "client_id": "client_id",
