@@ -122,9 +122,31 @@ OpenID Connect客户端应用程序需要以下配置.
   - Public:公共客户端， 公共应用程序在通信中不使用客户端机密。
 - 客户机密（客户端密钥）: 客户端密钥是与应用程序关联的密码。当应用程序配置为机密时，它将是必需的。
 - Flows: 如果常规OpenID连接设置允许此流，则应用程序也可以启用此流。
-  - 允许授权密码流（Allow Password Flow）： 它要求启用令牌终结点。更多信息请访问 <https://tools.ietf.org/html/rfc6749#section-1.3.3>
+  - 允许授权密码流（Allow Password Flow）： 它要求启用令牌终结点。更多信息请访问 <https://tools.ietf.org/html/rfc6749#section-1.3.3> \
+   请求示例:  ：
+    ``` JSON 
+    //url="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
+    {
+      "grant_type":"password",
+      "client_id": "client_id",
+      "client_secret": "client_secret",
+      "username":"username",
+      "password":"password",
+      "scope": "openid profile roles"
+    }
+    ```
   - 允许客户端凭据流(Allow Client Credentials Flow): 它要求启用令牌终结点。更多信息请访问 <https://tools.ietf.org/html/rfc6749#section-1.3.4>
-  - 允许授权代码流(Allow Authorization Code Flow): 它要求启用授权和令牌终结点。更多信息请访问<http://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth>
+  - 允许授权代码流(Allow Authorization Code Flow): 它要求启用授权和令牌终结点。更多信息请访问<http://openid.net/specs/openid-connect-core-1_0.html#CodeFlowAuth> \
+   请求示例：
+    ``` JSON    
+    //url="/connect/token" ,Method=POST,Content-Type=application/x-www-form-urlencoded 
+    {
+      "grant_type": "code",
+      "client_id": "client_id",
+      "client_secret": "client_secret",
+      "scope": "openid profile roles"
+    }
+    ```
   - 允许隐式流(Allow Implicit Flow): 它要求启用授权终结点。更多信息请访问 <http://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth>
   - 允许刷新令牌流(Allow Refresh Token Flow): 它允许使用刷新令牌刷新访问令牌。它可以与密码流、授权码流和混合流结合使用。更多信息请访问 <http://openid.net/specs/openid-connect-core-1_0.html#RefreshTokens>
 - 标准化角色名(Normalized RoleNames): 只有启用客户端凭据流时，才需要此配置。当应用程序使用该流进行身份验证时，它确定分配给该应用程序的角色。
@@ -159,7 +181,7 @@ OpenID Connect应用程序配方步骤示例:
 可以通过管理菜单中的“安全/OpenID 连接/管理/作用域” 打开设置或使用配方步骤设置作用域。
 
 OpenID连接作用域需要以下配置.
-|||
+|Key|Description|
 |-|:-|
 |名称|作用域的唯一名称.|
 |显示名称|与当前作用域关联的显示名称。|
