@@ -28,6 +28,8 @@ QQ 群：877196442
 
 我们的目标之一是启用托管应用程序的基于社区的生态系统，这些生态系统可以通过模块（如电子商务系统、博客引擎等）进行扩展。Orchard Core Framework支持模块化环境，允许不同的团队处理应用程序的不同部分，并使组件跨项目可重用。
 
+B站演示视频：<https://www.bilibili.com/video/BV17T4y177fW/>
+
 ## 使用Orchard Core CMS 构建网站 
 
 Orchard Core CMS 是基于Orchard CMS 使用ASP.NET Core 重写的。它不仅仅是一个端口，因为我们希望大幅提高性能，并尽可能与的ASP.NET Core 的开发模型一致。
