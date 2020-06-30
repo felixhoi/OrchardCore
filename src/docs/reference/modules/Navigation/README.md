@@ -7,7 +7,7 @@
 ## 支持主题
 
 通过将适当的局部视图文件添加到主题的“视图”文件夹中，可以对导航进行主题化。
-一个很好的例子可以在[`TheAdmin` theme project]中找到(https://github.com/OrchardCMS/OrchardCore/tree/dev/src/OrchardCore.Themes/TheAdmin).
+一个很好的例子可以在该项目找到： [`TheAdmin` theme project](https://github.com/OrchardCMS/OrchardCore/tree/dev/src/OrchardCore.Themes/TheAdmin).
 
 这个主题创建了标准的垂直导航菜单，可以在任何OrchardCore应用程序的管理仪表板上找到。
 “TheAdmin”主题与“Navigation”模块中提供的默认主题相比提供了以下备选方案：
