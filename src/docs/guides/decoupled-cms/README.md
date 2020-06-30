@@ -6,7 +6,7 @@
 __解耦__ 是一种开发模型，其中站点的前端和前端（管理）托管在同一个 Web 应用程序中，但只有前端由 CMS 驱动。然后，开发人员可以编写自己的 ASP.NET Razor 页面或控制器，以完全控制网站生成的内容，同时仍然利用 CMS（本例中为Orchard Core）来创作内容。
 
 !!! 注意
-    虽然本指南从新项目开始，并使用 Razor Pages，但您可以使用本指南中的许多内容将果园核心作为内容管理ASP.NET添加到任何现有的核心应用程序。
+    虽然本指南从新项目开始，并使用 Razor Pages，但您可以使用本指南中的许多内容将Orchard Core作为内容管理ASP.NET添加到任何现有的核心应用程序。
 
 ![Final Result](images/custom-preview.jpg)
 
@@ -123,11 +123,11 @@ public void ConfigureServices(IServiceCollection services)
 
 ## 创建博客文章
 
-T本部分介绍果园核心CMS的基本内容管理概念，如内 __Content Types__ 和 __Content Items__.
+T本部分介绍Orchard CoreCMS的基本内容管理概念，如内 __Content Types__ 和 __Content Items__.
 
 ### 内容建模
 
-在果园核心 CMS 中，管理的内容大部分称为内容项（Content Item）。内容项是版本文档，如页面、文章、博客文章、新闻项目或任何需要编辑的内容。这些文档都基于定义由哪些属性创建的内容类型（Content Type）。例如，任何文章都将有一个标题和一些文本。博客文章可能也有标记。Orchard Core CMS 允许您以您想要的方式对内容类型进行建模，这称为内容建模。
+在Orchard Core CMS 中，管理的内容大部分称为内容项（Content Item）。内容项是版本文档，如页面、文章、博客文章、新闻项目或任何需要编辑的内容。这些文档都基于定义由哪些属性创建的内容类型（Content Type）。例如，任何文章都将有一个标题和一些文本。博客文章可能也有标记。Orchard Core CMS 允许您以您想要的方式对内容类型进行建模，这称为内容建模。
 
 !!! 开发人员提示
     内容类型类似于类，其中内容项可视为内容类型的实例。
@@ -391,7 +391,7 @@ CMS不知道在呈现内容项时使用什么Razor页面，而是使用通用页
 
 In this tutorial we have learned how to
 
-- 启动新的果园核心CMS项目
+- 启动新的Orchard CoreCMS项目
 - 创建自定义内容类型
 - 编辑内容项
 - 创建具有自定义路由的剃须刀页面，然后呈现内容

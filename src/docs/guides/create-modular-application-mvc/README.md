@@ -11,7 +11,7 @@
 
 ## Creating an Orchard Core site and module
 
-有不同的方法来创建网站和模块的果园核心。了解更多 [here](../../getting-started/templates/README.md).  
+有不同的方法来创建网站和模块的Orchard Core。了解更多 [here](../../getting-started/templates/README.md).  
 在本指南中，我们将使用我们的“代码生成模板”.
 
 可以使用以下命令安装最新发布的模板：

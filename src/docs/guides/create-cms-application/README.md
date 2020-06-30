@@ -1,6 +1,6 @@
 # 创建一个 Orchard Core CMS 网站
 
-在本指南中，您将从项目模板将果园核心设置为内容管理系统。
+在本指南中，您将从项目模板将Orchard Core设置为内容管理系统。
 
 ## 您需要什么
 
@@ -9,7 +9,7 @@
 
 ## 创建项目
 
-有不同的方式为果园核心创建网站和模块。你可以在这里了解更多 [here](../../getting-started/templates/README.md).  
+有不同的方式为Orchard Core创建网站和模块。你可以在这里了解更多 [here](../../getting-started/templates/README.md).  
 在本指南中，我们将使用我们的"代码生成模板"。
 
 您可以使用以下命令安装最新发布的模板：
@@ -47,7 +47,7 @@ Application started. Press Ctrl+C to shut down.
 浏览器打开<https://localhost:5001>，它应该显示设置页面。 Open a browser on , it should display the setup screen.
 
 
-为了建立一个网站与CMS的所有功能，将使用 _Blog_ 配方 。食谱包含配置果园核心网站的模块和步骤的列表。
+为了建立一个网站与CMS的所有功能，将使用 _Blog_ 配方 。食谱包含配置Orchard Core网站的模块和步骤的列表。
 
 
 填写表单并选择 __Blog__ 配方和 __SQLite__ 数据库.
