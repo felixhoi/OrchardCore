@@ -2,9 +2,6 @@
 
 文档中心： [简体中文](https://docs.orchardcore.net/zh_CN/dev/) | [English](https://docs.orchardcore.net/en/dev/)
 
-由于目前中文文档翻译工作刚刚起步，欢迎小伙伴们踊跃报名参加文档翻译工作。
-
-QQ 群：877196442
 
 Orchard Core 是基于 [Orchard CMS](https://github.com/OrchardCMS/Orchard) 使用 [ASP.NET Core](https://docs.microsoft.com/aspnet/core/) 重新构建的。
 
@@ -15,9 +12,14 @@ Orchard Core 由两个不同的目标组成:
 
 需要注意框架和 CMS 之间的差异非常重要。一些想要开发 SaaS 应用程序的开发人员只会对模块化框架感兴趣。其他想要构建可管理网站的用户将专注于 CMS 并构建模块来增强其网站或整个生态系统。
 
+由于目前中文文档翻译工作刚刚起步，欢迎小伙伴们踊跃报名参加文档翻译工作。
+
+QQ 群：877196442
+
+[![Orchard Core CN 中文官方](https://pub.idqqimg.com/wpa/images/group.png)](//shang.qq.com/wpa/qunwpa?idkey=48721591a71ee7586316604a7a4ee99d26fd977c6120370a06585085a5936f62)
 [![Join the chat at https://gitter.im/OrchardCMS/OrchardCore](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/OrchardCMS/OrchardCore?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![BSD-3-Clause License](https://img.shields.io/badge/license-BSD--3--Clause-blue.svg)](https://github.com/OrchardCMS/OrchardCore/blob/master/LICENSE)
-[![Documentation](https://readthedocs.org/projects/orchardcore/badge/)](https://docs.orchardcore.net/)
+[![Documentation](https://readthedocs.org/projects/orchardcore/badge/)](https://docs.orchardcore.net/zh_CN/dev/)
 [![Crowdin](https://badges.crowdin.net/orchard-core/localized.svg)](https://crowdin.com/project/orchard-core)
 
 ## 使用Orchard Core Framework 构建软件服务 （SaaS） 解决方案 
@@ -25,6 +27,8 @@ Orchard Core 由两个不同的目标组成:
 了解Orchard Core Framework是独立于nuget.org上的CMS分发的，这一点非常重要。我们在 <https://github.com/OrchardCMS/OrchardCore.Samples> 提供了一些示例程序，它将指导您如何仅使用Orchard Core Framework来构建**模块化** 和 **多租户** 的应用程序，而无需任何 CMS 特定功能。
 
 我们的目标之一是启用托管应用程序的基于社区的生态系统，这些生态系统可以通过模块（如电子商务系统、博客引擎等）进行扩展。Orchard Core Framework支持模块化环境，允许不同的团队处理应用程序的不同部分，并使组件跨项目可重用。
+
+B站演示视频：<https://www.bilibili.com/video/BV17T4y177fW/>
 
 ## 使用Orchard Core CMS 构建网站 
 
@@ -74,12 +78,11 @@ Orchard Core的最新发行版本是 `1.0.0-rc2`。
 ## 从这里开始
 
 - 使用命令 `git clone https://github.com/OrchardCMS/OrchardCore.git` 克隆此仓库，并切换到 `dev` 分支。
-
-- 观看Orchard Core演示的ASP.NET社区站立视频: <https://www.youtube.com/watch?v=HeDjv3blBjQ&t=2246s&list=PL1rZQsJPBU2StolNg0aqvQswETPcYnNKL&index=24>
-
+- 按照这个教程 [Training Demo Module](https://github.com/Lombiq/Orchard-Training-Demo-Module) 你将学习如何开发Orchard Core模块。（这里是包含中文翻译的版本：[码云仓库,含全部中文注释](https://gitee.com/hyzx86/Orchard-Training-Demo-Module/)）
+- 观看Orchard Core演示的ASP.NET社区站立视频:[B站](https://www.bilibili.com/video/BV1Sz411e7eY/)  [youtube](https://www.youtube.com/watch?v=HeDjv3blBjQ&t=2246s&list=PL1rZQsJPBU2StolNg0aqvQswETPcYnNKL&index=24)
 - 参考这个示例 <https://github.com/OrchardCMS/OrchardCore.Samples> 它将引导你如何构建一个 **模块化** 和 **多租户** 的应用程序。
 
-- 按照这个教程 [Training Demo Module](https://github.com/Lombiq/Orchard-Training-Demo-Module) 你将学习如何开发Orchard Core模块。（这里是包含中文翻译的版本：[码云仓库](https://gitee.com/hyzx86/Orchard-Training-Demo-Module/)）
+
 
 ### 命令行
 
