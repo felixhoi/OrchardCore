@@ -86,9 +86,7 @@ namespace OrchardCore.Lucene.FrenchAnalyzer
 
 ![Content type indexing settings](images/7.jpg)
 
-Here we can see the Blog Post content type definition. We have now a section for every content type to define which part of this content item should be indexed as part of the `FullText`. 
-By default content items will index the "display text" and "body part" but we also added an option for you to customize the values that you would like to index as part of this `FullText` 
-index field. By clicking on the "Use custom full-text" we allow you to set any Liquid script to do so. So as the example states you could add `{{ Model.Content.BlogPost.Subtitle.Text }}` if you would like to also find this content item by it's *Subtitle* field. For the remaining, we let you imagine what you could possibly do with this Liquid field : index identifiers, fixed text or numeric values and else!
+
 这里我们可以看到Blog Post内容类型的定义。现在每个内容类型都有一个部分，用于定义此内容项的哪个部分应作为`FullText` 的一部分进行索引。
 默认情况下，内容项将索引“Display text”和“body part”，但我们还为您添加了一个选项，用于自定义要作为`FullText` 索引字段一部分索引的值。
 通过单击“使用自定义全文”，我们允许您设置任何Liquid脚本。因此，正如示例所述，
