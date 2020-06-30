@@ -1,51 +1,52 @@
-# Creating a modular ASP.NET Core application
+# 创建模块化ASP.NET Core 应用程序
 
-## What you will build
+## 你将构建什么
 
-You will build an application that is made of modules. The module will provide a Controller and a View while the Layout will
-be provided by the main application project.
+您将构建一个由模块组成的应用程序。该模块将提供一个控制器和一个视图，而布局将由主应用程序项目提供。
 
-## What you will need
+## 你需要准备什么
 
-- The current version of the .NET Core SDK. You can download it from here [https://www.microsoft.com/net/download/core](https://www.microsoft.com/net/download/core).
-- A text editor and a terminal where you can type dotnet commands.
+- .NET Core SDK的当前版本。你可以从这里下载 [https://www.microsoft.com/net/download/core](https://www.microsoft.com/net/download/core).
+- 一个文本编辑器和一个可以键入dotnet命令的终端。
 
 ## Creating an Orchard Core site and module
 
-There are different ways to create sites and modules for Orchard Core. You can learn more about them [here](../../getting-started/templates/README.md).  
-In this guide we will use our "Code Generation Templates".
+有不同的方法来创建网站和模块的果园核心。了解更多 [here](../../getting-started/templates/README.md).  
+在本指南中，我们将使用我们的“代码生成模板”.
 
-You can install the latest released templates using this command:
+可以使用以下命令安装最新发布的模板：
 
 ```dotnet new -i OrchardCore.ProjectTemplates::1.0.0-*```
 
-!!! note
-    To use the development branch of the template add `--nuget-source https://nuget.cloudsmith.io/orchardcore/preview/v3/index.json`
+!!! 注意
+    使用模板的开发版分支需要添加 `--nuget-source https://nuget.cloudsmith.io/orchardcore/preview/v3/index.json`
 
-Create an empty folder that will contain your site. Open a terminal, navigate to that folder and run this:
+创建一个包含站点的空文件夹。打开终端，导航到该文件夹并运行以下命令：
 
 ```dotnet new ocmvc -n MySite```
 
-This creates a new ASP.NET MVC application in a new folder named `MySite`.  
-We can now create a new module with the following command:
+这将创建一个新的ASP.NETMVC应用程序在一个名为 `MySite`.  
+现在可以使用以下命令创建新模块：
 
 ```dotnet new ocmodulemvc -n MyModule```
 
-The module is created in the `MyModule` folder.  
-The next step is to reference the module from the application, by adding a project reference:
+该模块在“MyModule”文件夹中创建。
+下一步是通过添加项目引用从应用程序引用模块：
 
 ```dotnet add MySite reference MyModule```
 
-## Testing the resulting application
+## 测试生成的应用程序
 
-From the root of the folder containing both projects, run this command:
+从包含两个项目的文件夹根目录中，运行以下命令：
 
 `dotnet run --project .\MySite\MySite.csproj`
 
-!!! note
-    If you are using the development branch of the templates, run `dotnet restore .\MySite\MySite.csproj --source https://nuget.cloudsmith.io/orchardcore/preview/v3/index.json` before running the application
+!!! 注意
+    如果您使用的是模板的开发分支, 运行程序前，先执行：
+    
+     `dotnet restore .\MySite\MySite.csproj --source https://nuget.cloudsmith.io/orchardcore/preview/v3/index.json` 
 
-Your application should now be running and contain the open ports:
+您的应用程序现在应该运行在以下端口：
 
 ```
 Now listening on: https://localhost:5001
@@ -53,17 +54,17 @@ Now listening on: http://localhost:5000
 Application started. Press Ctrl+C to shut down.
 ```
 
-Open a browser on <https://localhost:5001/MyModule/Home/Index>  
-It should display __Hello from MyModule__
+打开浏览器 <https://localhost:5001/MyModule/Home/Index>  
+它应该显示 __Hello from MyModule__
 
-> The Layout is coming from the main application project, while the controller, action and view are coming from the module project.
+> 布局来自主应用程序项目，而控制器、操作和视图来自模块项目。
 
-## Registering a custom route
+## 注册自定义路由
 
-By default all routes in modules are modeled like `{area}/{controller}/{action}` where `{area}` is the name of the module.  
-We will change the route of the view in this module to handle the home page.
+默认情况下，模块中的所有路由都为`{area}/{controller}/{action}`其中`{area}`是模块的名称。
+我们将更改此模块中视图的路径以处理主页。
 
-In the `Startup.cs` file of `MyModule`, add this code in the `Configure()` method.
+在 `Startup.cs` 文件 `MyModule` ，请将此代码添加到 `Configure()` 方法中。
 
 ```csharp
     routes.MapAreaControllerRoute(
@@ -74,12 +75,12 @@ In the `Startup.cs` file of `MyModule`, add this code in the `Configure()` metho
     );
 ```
 
-Restart the application and open the home page, which should display the same result as with the previous url.
+重新启动应用程序并打开主页，该主页应显示与之前的url相同的结果。
 
-## Summary
+## 摘要
 
-You just created an ASP.NET Core application with a module containing a Controller and a View.
+你刚刚创造了一个ASP.NET具有包含控制器和视图的模块的核心应用程序。
 
-## Tutorial
+## 视频讲解
 
 <https://www.youtube.com/watch?v=LoPlECp31Oo>
