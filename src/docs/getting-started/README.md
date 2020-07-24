@@ -1,26 +1,26 @@
-# Getting started with Orchard Core as a NuGet package
+# Orchard Core的NuGet包使用 入门篇
 
-In this article, we are going to see how easy it is to create a CMS Web application using the NuGet packages provided by Orchard Core.
-
-You can find the original blog post written by Chris Payne here:  
+在这篇文章中，我们将看到使用Orchard Core的NuGet包创建一个CMS网站应用有多简单。
+ 
+Chris Payne撰写的原文链接如下：
 <http://ideliverable.com/blog/getting-started-with-orchard-core-as-a-nuget-package>
 
-## Create an Orchard Core CMS application
+## 创建一个Orchard Core CMS网站应用
 
-In Visual Studio, create a new empty .NET Core web application. Ex: `Cms.Web`. Do not check "Place solution and project in the same directory", because later when you create modules and themes you will want them to live alongside the web application within the solution.
+使用Visual Studio，创建一个名为Cms.Web空的.NET Core网站应用。在配置新项目界面，不要勾选`将解决方案和项目放在同一目录中`选项，因为稍后创建模块和主题时，你可能希望它们在解决方案的同级目录中。
 
-!!! note
-    If you want to use the `preview` packages, [configure the OrchardCore Preview url in your Package sources](preview-package-source.md)
+!!! 备注
+    如果你想使用“预发行”包，[在“程序包源”中配置OrchardCore预览地址](preview-package-source.md)
 
-To add a reference to the package, right-click on the project and click on `Manage NuGet packages...`, check `Include prerelease` if required. If you added the preview source above, select this from the `Package Source` selection in the top right.  In the `Browse` tab, search for `OrchardCore.Application.Cms.Targets` and `Install` the package.
+    为项目添加包引用,在项目里的 `依赖项` 上右击然后选择 `管理NuGet程序包` , 勾选 `包括发行版` (如果需要的话) 。 如果你配置了上面的预览地址，点击右上角的 `程序包源` 并选择刚才配置的预览地址。在 `浏览` 选项卡中，搜索 `OrchardCore.Application.Cms.Targets` ，然后选中并 `安装` 这个包。
 
-Open `Startup.cs` and modify the `ConfigureServices` method by adding this line:
+打开 `Startup.cs` 并修改 `ConfigureServices` 方法，添加以下代码：
 
 ```csharp
 services.AddOrchardCms();
 ```
 
-In the `Configure` method, replace this block:
+在 `Configure` 方法中, 选中以下代码:
 
 ```csharp
 app.UseEndpoints(endpoints =>
@@ -32,26 +32,26 @@ app.UseEndpoints(endpoints =>
 });
 ```
 
-with this line:
+然后使用以下代码替换:
 
 ```csharp
 app.UseOrchardCore();
 ```
 
-## Setup your application
+## 编译生成应用
 
-Launch your application (Ctrl+F5). The setup page is displayed.
+运行项目 (Ctrl+F5)。浏览器显示了 安装界面。
 
-Enter the required information about the site:
+在安装界面输入需要的信息：
 
-- The name of the site. Ex: `Orchard Core`.
-- The theme recipe to use. Ex: `Agency`.
-- The timezone of the site. Ex: `(+01:00) Europe/Paris`.
-- The Sql provider to use. Ex: `SqLite`.
-- The name of the admin user. Ex: `admin`.
-- The email of the admin. Ex: `foo@bar.com`
-- The password and the password confirmation.
+- 站点名字。 比如： `Orchard Core`.
+- 配方。 比如： `Agency`.
+- 默认时区。 比如： `(+01:00) Europe/Paris`.
+- 数据库类型。 比如： `SqLite`.
+- 超级用户名。 比如： `admin`.
+- 超级用户的电子邮箱。 比如： `foo@bar.com`
+- 超级用户的密码以及确认密码。
 
-Submit the form and your site is generated after a few seconds.
+提交表单，你的网站在几秒后将会生成。
 
-Then, you can access to the admin using the `/admin` url. Enjoy.
+然后，你就可以使用 `/admin` 地址访问管理界面了。开始享受成果吧。
