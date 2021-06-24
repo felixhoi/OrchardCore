@@ -1,11 +1,11 @@
 # Add preview package source
 
-In this article, we are going to add a new package source pointing to the preview packages.  
-The preview packages are built each time some code is committed on the `dev` branch, compared to the ones on NuGet, built from the `master` branch.  
-They are the most up to date versions but not the most stable and can contain breaking changes.
+在本文中，我们将添加一个指向预览包的新包源。   
+每次在 dev 分支上提交一些代码时都会构建预览包，和从master分支构建的Nuget包相比，
+它们是最新版本，但不是最稳定的，并且可能包含重大更改。 
 
 !!! warning
-    We do not suggest you to use the dev packages in production.
+    我们不建议您在生产中使用 dev 包。
 
 ## Adding Orchard Core preview Feed to Visual Studio
 
