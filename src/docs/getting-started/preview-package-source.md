@@ -17,7 +17,7 @@
 
 ## 使用 NuGet.config 添加 Orchard Core 预览源
 
-您也可以透過 NuGet.config 文件添加包源：
+您也可以通过 `NuGet.config` 文件添加包源，将 该文件添加到你的解决方案中，并放置于sln 相同目录：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
